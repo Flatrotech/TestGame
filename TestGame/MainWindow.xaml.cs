@@ -60,6 +60,7 @@ namespace TestGame
                 }
 
                 turnFlag = !turnFlag;
+                FlipLabel();
 
                 IsGameOver();
             }
@@ -81,6 +82,7 @@ namespace TestGame
                 }
 
                 turnFlag = !turnFlag;
+                FlipLabel();
 
                 IsGameOver();
             }
@@ -102,6 +104,7 @@ namespace TestGame
                 }
 
                 turnFlag = !turnFlag;
+                FlipLabel();
 
                 IsGameOver();
             }
@@ -123,6 +126,7 @@ namespace TestGame
                 }
 
                 turnFlag = !turnFlag;
+                FlipLabel();
 
                 IsGameOver();
             }
@@ -144,6 +148,7 @@ namespace TestGame
                 }
 
                 turnFlag = !turnFlag;
+                FlipLabel();
 
                 IsGameOver();
             }
@@ -165,6 +170,7 @@ namespace TestGame
                 }
 
                 turnFlag = !turnFlag;
+                FlipLabel();
 
                 IsGameOver();
             }
@@ -186,6 +192,7 @@ namespace TestGame
                 }
 
                 turnFlag = !turnFlag;
+                FlipLabel();
 
                 IsGameOver();
             }
@@ -207,6 +214,7 @@ namespace TestGame
                 }
 
                 turnFlag = !turnFlag;
+                FlipLabel();
 
                 IsGameOver();
             }
@@ -227,6 +235,7 @@ namespace TestGame
                 }
 
                 turnFlag = !turnFlag;
+                FlipLabel();
 
                 IsGameOver();
             }
@@ -270,6 +279,9 @@ namespace TestGame
             {
                 board.Add("");
             }
+
+            lblPlayerTurn.Content = "X";
+            turnFlag = false;
         }
 
         private void ResetGame()
@@ -296,7 +308,7 @@ namespace TestGame
 
             if (board[2] == board[4] && board[4] == board[6] && board[2] != "")
             {
-                winner = board[0];
+                winner = board[2];
                 return true;
             }
 
@@ -329,6 +341,18 @@ namespace TestGame
             }
 
             return false;
+        }
+
+        private void FlipLabel()
+        {
+            if (!turnFlag)
+            {
+                lblPlayerTurn.Content = "X";
+            }
+            else
+            {
+                lblPlayerTurn.Content = "O";
+            }
         }
 
         #endregion
