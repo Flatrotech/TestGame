@@ -18,15 +18,15 @@
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
 
-        <Button x:Name="btn00" Content="" Grid.Column="0" Grid.Row="0"/>
-        <Button x:Name="btn01" Content="" Grid.Column="1" Grid.Row="0"/>
-        <Button x:Name="btn02" Content="" Grid.Column="2" Grid.Row="0"/>
-        <Button x:Name="btn10" Content="" Grid.Column="0" Grid.Row="1"/>
-        <Button x:Name="btn11" Content="" Grid.Column="1" Grid.Row="1"/>
-        <Button x:Name="btn12" Content="" Grid.Column="2" Grid.Row="1"/>
-        <Button x:Name="btn20" Content="" Grid.Column="0" Grid.Row="2"/>
-        <Button x:Name="btn21" Content="" Grid.Column="1" Grid.Row="2"/>
-        <Button x:Name="btn22" Content="" Grid.Column="2" Grid.Row="2"/>
+        <Button x:Name="btn00" Content="" Grid.Column="0" Grid.Row="0" FontSize="100" Click="Btn00_Click"/>
+        <Button x:Name="btn01" Content="" Grid.Column="1" Grid.Row="0" FontSize="100" Click="Btn01_Click"/>
+        <Button x:Name="btn02" Content="" Grid.Column="2" Grid.Row="0" FontSize="100" Click="Btn02_Click"/>
+        <Button x:Name="btn10" Content="" Grid.Column="0" Grid.Row="1" FontSize="100" Click="Btn10_Click"/>
+        <Button x:Name="btn11" Content="" Grid.Column="1" Grid.Row="1" FontSize="100" Click="Btn11_Click"/>
+        <Button x:Name="btn12" Content="" Grid.Column="2" Grid.Row="1" FontSize="100" Click="Btn12_Click"/>
+        <Button x:Name="btn20" Content="" Grid.Column="0" Grid.Row="2" FontSize="100" Click="Btn20_Click"/>
+        <Button x:Name="btn21" Content="" Grid.Column="1" Grid.Row="2" FontSize="100" Click="Btn21_Click"/>
+        <Button x:Name="btn22" Content="" Grid.Column="2" Grid.Row="2" FontSize="100" Click="Btn22_Click"/>
 
     </Grid>
 </Window>
